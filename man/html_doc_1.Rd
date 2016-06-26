@@ -4,7 +4,7 @@
 \alias{html_doc_1}
 \title{small tweak to html_document}
 \usage{
-html_doc_1(code_folding = c("hide", "show", "none"), theme = "readable",
+html_doc_1(code_folding = c("show", "hide", "none"), theme = "readable",
   ...)
 }
 \arguments{

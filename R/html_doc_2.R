@@ -1,8 +1,12 @@
 #' small tweak to html_document
 #'
 #' The next simplest thing we can do is change the defaults for
-#' \code{code_folding} and theme, then pass the rest of our arguments to
+#' \code{code_folding} and theme, add some css for the title,
+#' then pass the rest of our arguments to
 #' \code{rmarkdown::\link[rmarkdown]{html_document}}
+#'
+#' Any css you send using the `css` argument will be appended
+#' to the title css.
 #'
 #' @param code_folding  Enable document readers to toggle the
 #'  display of R code chunks. We change the default to \code{"hide"}.
@@ -29,7 +33,7 @@ html_doc_2 <- function(code_folding = c("hide", "show", "none"),
 
   # append supplied css to our css
   css <- c(
-    system.file("css", "comic_sans.css", package = "user2016format"),
+    system.file("css", "comic_sans.css", package = "user2016docdemo"),
     css
   )
 

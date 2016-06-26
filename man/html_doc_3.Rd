@@ -4,7 +4,7 @@
 \alias{html_doc_3}
 \title{small tweak to html_document}
 \usage{
-html_doc_3(code_folding = c("hide", "show", "none"), css = NULL, ...)
+html_doc_3(code_folding = c("show", "hide", "none"), css = NULL, ...)
 }
 \arguments{
 \item{code_folding}{Enable document readers to toggle the
@@ -16,8 +16,6 @@ to this format's css.}
 
 \item{...}{other arguments passed to
 \code{rmarkdown::\link[rmarkdown]{html_document}}}
-
-\item{theme}{Use to change the theme}
 }
 \value{
 R Markdown output format to pass to

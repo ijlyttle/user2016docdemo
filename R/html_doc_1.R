@@ -20,7 +20,7 @@
 #' }
 #' @export
 #
-html_doc_1 <- function(code_folding = c("hide", "show", "none"),
+html_doc_1 <- function(code_folding = c("show", "hide", "none"),
                        theme = "readable", ...){
 
   code_folding <- match.arg(code_folding)
