@@ -13,5 +13,5 @@ LazyData: true
 Imports:
     rmarkdown
 RoxygenNote: 5.0.1
-URL: https://github.com/ijlyttle/user2016format
-BugReports: https://github.com/ijlyttle/user2016format/issues
+URL: https://github.com/ijlyttle/user2016docdemo
+BugReports: https://github.com/ijlyttle/user2016docdemo/issues

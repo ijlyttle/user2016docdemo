@@ -2,7 +2,7 @@
 % Please edit documentation in R/html_doc_4.R
 \name{html_doc_4}
 \alias{html_doc_4}
-\title{small tweak to html_document}
+\title{what have we done to html_document?}
 \usage{
 html_doc_4(toc = TRUE, toc_float = TRUE, code_folding = c("show", "hide",
   "none"), highlight = "textmate", css = NULL, ...)

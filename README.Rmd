@@ -22,5 +22,5 @@ I would be shocked if this was ever submitted to CRAN. However, you may install 
 
 ```{r eval=FALSE}
 # install.packages("devtools")
-devtools::install_github("ijlyttle/user2016format")
+devtools::install_github("ijlyttle/user2016docdemo")
 ```

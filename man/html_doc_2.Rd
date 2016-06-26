@@ -2,7 +2,7 @@
 % Please edit documentation in R/html_doc_2.R
 \name{html_doc_2}
 \alias{html_doc_2}
-\title{small tweak to html_document}
+\title{start to abuse to html_document}
 \usage{
 html_doc_2(code_folding = c("hide", "show", "none"), theme = "readable",
   css = NULL, ...)

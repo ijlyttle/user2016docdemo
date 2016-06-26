@@ -1,4 +1,4 @@
-#' small tweak to html_document
+#' start to abuse to html_document
 #'
 #' The next simplest thing we can do is change the defaults for
 #' \code{code_folding} and theme, add some css for the title,

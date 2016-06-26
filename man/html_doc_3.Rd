@@ -2,7 +2,7 @@
 % Please edit documentation in R/html_doc_3.R
 \name{html_doc_3}
 \alias{html_doc_3}
-\title{small tweak to html_document}
+\title{works over html_document}
 \usage{
 html_doc_3(code_folding = c("show", "hide", "none"), css = NULL, ...)
 }
@@ -23,7 +23,7 @@ R Markdown output format to pass to
 }
 \description{
 The next simplest thing we can do is change the defaults for
-\code{code_folding} and theme, then pass the rest of our arguments to
+\code{code_folding} and a custom theme, then pass the rest of our arguments to
 \code{rmarkdown::\link[rmarkdown]{html_document}}
 }
 \examples{

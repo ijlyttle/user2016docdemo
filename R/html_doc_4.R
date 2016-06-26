@@ -1,4 +1,4 @@
-#' small tweak to html_document
+#' what have we done to html_document?
 #'
 #' Less simple, but we enable a floating table-of-contents,
 #' \code{code_folding}, syntax highlighting, insert some custom css,
@@ -34,8 +34,8 @@ html_doc_4 <- function(toc = TRUE, toc_float = TRUE,
 
   # append supplied css to our css
   css <- c(
-    system.file("css", "user2016format.css", package = "user2016format"),
-    system.file("css", "comic_sans.css", package = "user2016format"),
+    system.file("css", "user2016docdemo.css", package = "user2016docdemo"),
+    system.file("css", "comic_sans.css", package = "user2016docdemo"),
     css
   )
 

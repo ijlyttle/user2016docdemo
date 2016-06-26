@@ -1,4 +1,4 @@
-#' small tweak to html_document
+#' works over html_document
 #'
 #' The next simplest thing we can do is change the defaults for
 #' \code{code_folding} and a custom theme, then pass the rest of our arguments to
@@ -28,7 +28,7 @@ html_doc_3 <- function(code_folding = c("show", "hide", "none"),
 
   # append supplied css to our css
   css <- c(
-    system.file("css", "user2016format.css", package = "user2016format"),
+    system.file("css", "user2016docdemo.css", package = "user2016docdemo"),
     css
   )
 
