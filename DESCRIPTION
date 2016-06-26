@@ -1,0 +1,15 @@
+Package: user2016format
+Title: Custom format for rmarkdown
+Version: 0.0.0.9000
+Authors@R: 'Ian Lyttle <ian.lyttle@schneider-electric.com> [aut, cre]'
+Description: This will be a collection of functions used to
+    demonstrate how you can make custom formats for rmarkdown. All of these
+    formats will be based on rmarkdown::html_document()
+Depends:
+    R (>= 3.3.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    rmarkdown
+RoxygenNote: 5.0.1
