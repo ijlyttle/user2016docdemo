@@ -1,4 +1,4 @@
-Package: user2016format
+Package: user2016docdemo
 Title: Custom format for rmarkdown
 Version: 0.0.0.9000
 Authors@R: 'Ian Lyttle <ian.lyttle@schneider-electric.com> [aut, cre]'
