@@ -31,4 +31,7 @@ The next simplest thing we can do is change the defaults for
   rmarkdown::render("foo.Rmd", html_doc_3())
 }
 }
+\seealso{
+\url{http://rmarkdown.rstudio.com/developer_custom_formats.html}
+}
 

@@ -23,4 +23,7 @@ The simplest thing we can do is pass all our arguments to
   rmarkdown::render("foo.Rmd", html_doc_0())
 }
 }
+\seealso{
+\url{http://rmarkdown.rstudio.com/developer_custom_formats.html}
+}
 

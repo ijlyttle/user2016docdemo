@@ -16,6 +16,8 @@
 #' @param ... other arguments passed to
 #'   \code{rmarkdown::\link[rmarkdown]{html_document}}
 #'
+#' @seealso \url{http://rmarkdown.rstudio.com/developer_custom_formats.html}
+#'
 #' @return R Markdown output format to pass to
 #'   \code{rmarkdown::\link[rmarkdown]{render}}
 #'
@@ -32,19 +34,36 @@ html_doc_4 <- function(toc = TRUE, toc_float = TRUE,
 
   code_folding <- match.arg(code_folding)
 
-  # append supplied css to our css
-  css <- c(
-    system.file("css", "user2016docdemo.css", package = "user2016docdemo"),
-    system.file("css", "comic_sans.css", package = "user2016docdemo"),
-    css
-  )
+  name_fmt <- "user2016docdemo"
+  version_fmt <- "0.0.0.9000"
+
+  # # append supplied css to our css
+  # css <- c(
+  #   css,
+  #   file.path(
+  #     "site_libs",
+  #     paste(name_fmt, version_fmt, sep = "-"),
+  #     c("user2016docdemo.css", "comic_sans.css")
+  #   )
+  # )
+
+  dep <- function(){
+    htmltools::htmlDependency(
+      name = name_fmt,
+      version = version_fmt,
+      src = system.file("site_libs", package = "user2016docdemo"),
+      stylesheet = file.path("css", c("comic_sans.css", "user2016docdemo.css"))
+    )
+  }
 
   rmarkdown::html_document(
     toc = toc, toc_float = toc,
     code_folding = code_folding,
     highlight = highlight,
-    css = css,
+    extra_dependencies = list(dep()),
+    all_files = FALSE,
     ...
   )
+
 }
 

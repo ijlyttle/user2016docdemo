@@ -39,4 +39,7 @@ to the title css.
   rmarkdown::render("foo.Rmd", html_doc_2())
 }
 }
+\seealso{
+\url{http://rmarkdown.rstudio.com/developer_custom_formats.html}
+}
 

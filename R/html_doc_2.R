@@ -20,6 +20,8 @@
 #' @return R Markdown output format to pass to
 #'   \code{rmarkdown::\link[rmarkdown]{render}}
 #'
+#' @seealso \url{http://rmarkdown.rstudio.com/developer_custom_formats.html}
+#'
 #' @examples
 #' \dontrun{
 #'   rmarkdown::render("foo.Rmd", html_doc_2())
@@ -37,7 +39,7 @@ html_doc_2 <- function(code_folding = c("hide", "show", "none"),
     css
   )
 
-  rmarkdown::html_document(
+ rmarkdown::html_document(
     code_folding = code_folding,
     theme = theme,
     css = css,
