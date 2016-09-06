@@ -11,7 +11,7 @@
 
 
 
-<title>Customizing</title>
+<title>Customizing html-document functions</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -202,13 +202,40 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Customizing</h1>
+<h1 class="title toc-ignore">Customizing html-document functions</h1>
 
 </div>
 
 
-<pre class="r"><code>print(&quot;hello world&quot;)</code></pre>
-<pre><code>## [1] &quot;hello world&quot;</code></pre>
+<div id="user2016docdemo" class="section level2">
+<h2>user2016docdemo</h2>
+<p>This package and these pages grew out of the R Markdown tutorial given at UseR! 2016 at Stanford. The purpose of both is to show how you can make your own functions to customize the behavior of <code>rmarkdown::html_document()</code>.</p>
+<p>In the navbar, you will find links to demonstration for a set of increasingly-more-complicated html-document functions.</p>
+<div id="installation" class="section level3">
+<h3>Installation</h3>
+<p>I don’t see myself submitting this to CRAN.</p>
+<pre class="r"><code># install.packages(&quot;devtools&quot;)
+install_github(&quot;ijlyttle/user2016docdemo&quot;)</code></pre>
+</div>
+<div id="follow-along-with-code" class="section level3">
+<h3>Follow along with code</h3>
+<p>First of all, this site is kept in the <code>master</code> branch of the repository, in the <code>/docs</code> folder. This is a new offering from GitHub to allow you to serve GitHub pages from the master branch (<a href="https://help.github.com/articles/user-organization-and-project-pages/">link</a>).</p>
+<p>You can see the organization of this site by viewing the <a href="https://github.com/ijlyttle/user2016docdemo/tree/master/docs">GitHub repository</a>.</p>
+<div id="required-elements" class="section level4">
+<h4>Required elements</h4>
+<p>To be able to build your site using <code>rmarkdown::render_site()</code>, there are two required elements (links to this site’s source files included):</p>
+<ul>
+<li><a href="https://raw.githubusercontent.com/ijlyttle/user2016docdemo/master/docs/index.Rmd"><code>index.Rmd</code></a> (or index.html)</li>
+<li><a href="https://github.com/ijlyttle/user2016docdemo/blob/master/docs/_site.yml"><code>_site.yml</code></a></li>
+</ul>
+<p>You can read more about site-building in <a href="http://rmarkdown.rstudio.com/rmarkdown_websites.html">this RStudio article</a>.</p>
+<p>Apparently, you can seperate out the navbar into its own yml file. This is not necessary as this content can be included in <code>_site.yml</code>, but I find it to be useful:</p>
+<ul>
+<li><a href="https://github.com/ijlyttle/user2016docdemo/blob/master/docs/_navbar.yml"><code>_navbar.yml</code></a></li>
+</ul>
+</div>
+</div>
+</div>
 
 
 

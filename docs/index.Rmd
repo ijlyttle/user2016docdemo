@@ -1,7 +1,39 @@
 ---
-title: "Customizing"
+title: "Customizing html-document functions"
 ---
 
-```{r}
-print("hello world")
+## user2016docdemo
+
+This package and these pages grew out of the R Markdown tutorial given at UseR! 2016 at Stanford. The purpose of both is to show how you can make your own functions to customize the behavior of `rmarkdown::html_document()`.
+
+In the navbar, you will find links to demonstration for a set of increasingly-more-complicated html-document functions.
+
+### Installation
+
+I don't see myself submitting this to CRAN.
+
+```{r eval=FALSE}
+# install.packages("devtools")
+install_github("ijlyttle/user2016docdemo")
 ```
+
+### Follow along with code
+
+First of all, this site is kept in the `master` branch of the repository, in the `/docs` folder. This is a new offering from GitHub to allow you to serve GitHub pages from the master branch ([link](https://help.github.com/articles/user-organization-and-project-pages/)).
+
+You can see the organization of this site by viewing the [GitHub repository](https://github.com/ijlyttle/user2016docdemo/tree/master/docs).
+
+#### Required elements
+
+To be able to build your site using `rmarkdown::render_site()`, there are two required elements (links to this site's source files included):
+
+- [`index.Rmd`](https://raw.githubusercontent.com/ijlyttle/user2016docdemo/master/docs/index.Rmd) (or index.html)
+- [`_site.yml`](https://github.com/ijlyttle/user2016docdemo/blob/master/docs/_site.yml)
+
+You can read more about site-building in [this RStudio article](http://rmarkdown.rstudio.com/rmarkdown_websites.html).
+
+Apparently, you can seperate out the navbar into its own yml file. This is not necessary as this content can be included in `_site.yml`, but I find it to be useful:
+
+- [`_navbar.yml`](https://github.com/ijlyttle/user2016docdemo/blob/master/docs/_navbar.yml)
+
+
