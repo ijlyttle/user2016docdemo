@@ -1,0 +1,8 @@
+title: "Customizing html-document formats"
+right:
+  - text: "Demonstrations"
+    menu:
+      - text: "Simplest - do nothing"
+      - text: "Modify defaults"
+      - text: "Add css"
+      - text: "Modify knitr options"
