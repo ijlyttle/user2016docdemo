@@ -18,6 +18,8 @@ This is a series of R Markdown document-format functions used to show how you ca
 
 All of the custom formatting functions rely on `rmarkdown::html_document()`. The help documentation for the functions here are extracted from the `html_document()` documentation.
 
+This works with the development 
+
 I would be shocked if this was ever submitted to CRAN. However, you may install from github:
 
 ```{r eval=FALSE}
